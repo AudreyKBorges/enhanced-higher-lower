@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Higher - Lower</title>
+    <!-- CSS -->
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div class="container">
+    <h1>Higher - Lower</h1>
+    <p>Guess a number between 1 and 20.</p>
+    <div class="row">
+        <div class="col-lg-3 col-md-6">
+           <form>
+            <div class="form-group">
+            <label for="guess">Your Guess:</label><br>
+            <input type="text" id="guess" name="guess">
+            <button class="btn btn primary" id="button" type="button" onclick="do_guess();">Guess</button>
+          </div>
+           </form>
+        </div>
+    </div>
+    <p id="message"></p>
+</div>
+	<script src="../js/script.js"></script>
+    <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
