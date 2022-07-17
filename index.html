@@ -4,26 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Higher - Lower</title>
+    <title>Higher - Lower: A Number Guessing Game</title>
     <!-- CSS -->
-    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="container">
-    <h1>Higher - Lower</h1>
-    <p>Guess a number between 1 and <span id="max-value">N</span>.</p>
-    <div class="row">
-        <div class="col-lg-3 col-md-6">
-           <form>
-            <div class="form-group">
-            <label for="guess">Your Guess:</label><br>
+      <div class="card border-primary" style="max-width: 20rem;">
+        <h2 class="card-header">Higher - Lower</h2>
+        <h4 class="card-title">A Number Guessing Game</h4>
+        <div class="card-body" style="padding:0;"></div>
+        <form>
+          <fieldset style="padding:15px;">
+          <p class="card-text">Guess a number between 1 and <span id="max-value">N</span>.</p>          <label for="guess">Your Guess:</label><br>
             <input type="text" id="guess" name="guess">
-            <button class="btn btn primary" id="button" type="button">Guess</button>
-          </div>
-           </form>
-        </div>
-    </div>
+            <button class="btn btn-primary" id="button" type="button">Guess</button>
+          </fieldset>
+        </form>
     <p id="message"></p>
+  </div>
+</div>
 </div>
 	<script src="scripts/script.js"></script>
     <!-- jQuery library -->

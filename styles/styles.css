@@ -1,0 +1,25 @@
+body {
+    background-image: linear-gradient(to right, #08bcf8 , #da317d);
+}
+
+.container {
+    padding-top: 10rem;
+}
+
+.card {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card-header, .card-title {
+    text-align: center;
+}
+
+.card-title {
+    padding-top: 1em;
+}
+
+#message {
+    padding-left: 15px;
+}
