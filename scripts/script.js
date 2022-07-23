@@ -1,4 +1,4 @@
-window.onload = function(e){
+window.onload = function(e) {
 
     // set minimum number and user determined max value
     let minNum = 1;
@@ -21,6 +21,9 @@ window.onload = function(e){
 
     // guess button
     const button = document.getElementById('button');
+
+    // guess field
+    const guessField = document.querySelector('.guessField');
 
     // initialize an empty array to store user guesses
     let nums = [];
@@ -64,7 +67,9 @@ window.onload = function(e){
         console.log(guess);
         nums.push(guess);
         message.innerHTML = `You got it! It took you ${nums.length} tries and your guesses were ${nums.join(', ')}`;
-        nums = []
+        nums = [];
+        document.getElementById("guess").disabled = true;
+        return;
     }
 });
 }
