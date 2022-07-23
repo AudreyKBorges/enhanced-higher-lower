@@ -66,7 +66,16 @@ window.onload = function(e) {
     else if (guess == num) {
         console.log(guess);
         nums.push(guess);
-        message.innerHTML = `You got it! It took you ${nums.length} tries and your guesses were ${nums.join(', ')}`;
+        let numTry = "try";
+        let yourGuesses = "your guess was";
+        if (nums.length == 1) {
+            numTry = "try";
+            yourGuesses = "your guess was";
+        } else {
+            numTry = "tries";
+            yourGuesses = "your guesses were";
+        }
+        message.innerHTML = `You got it! It took you ${nums.length} ${numTry} and ${yourGuesses} ${nums.join(', ')} ${'.'}`;
         nums = [];
         document.getElementById("guess").disabled = true;
         return;
